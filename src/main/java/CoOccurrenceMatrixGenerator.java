@@ -53,7 +53,7 @@ public class CoOccurrenceMatrixGenerator {
             for (IntWritable value : values) {
                 sum = sum + value.get();
             }
-            // movieA&movieB sum
+            // movieA&movieB\t relation
             context.write(key, new IntWritable(sum));
         }
     }
